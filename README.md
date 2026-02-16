@@ -1,75 +1,170 @@
-# NLP Feedback Classification System
+📊 NLP Feedback Classification Framework
+Survey Analytics + Text Mining + Performance Scoring
 
-## Overview
 
-This project implements a professional Natural Language Processing (NLP) pipeline for analyzing textual feedback in educational and organizational environments.
 
-The system is designed to support:
+🇪🇸 Descripción (Español)
 
-- Binary classification (Positive / Negative)
-- Multiclass classification (Negative / Neutral / Positive)
-- Survey analytics integration (Likert-scale + text responses)
-- Performance scoring (0–100 index)
-- Class imbalance handling (class_weight, threshold tuning, SMOTE)
-- Model validation and overfitting detection
+Sistema replicable de NLP + Survey Analytics diseñado para analizar feedback textual combinado con escalas Likert, generando:
 
----
+Clasificación binaria (Riesgo vs OK)
 
-## Business / Institutional Application
+Clasificación multiclase (Negativo / Neutral / Positivo)
 
-This system is adaptable to:
+Índice de desempeño normalizado (0–100)
 
-- Student → Teacher evaluations
-- Principal → Teacher evaluations
-- Teacher self-evaluation
-- Employee performance reviews
-- Customer feedback analysis
+Agregaciones listas para Power BI / Looker
 
-The architecture is replicable across industries.
+Interpretabilidad del modelo (tokens con mayor peso)
 
----
+Este framework permite integrar datos estructurados y no estructurados en un sistema analítico escalable.
 
-## Technical Stack
+🎯 Objetivos del Proyecto
 
-- Python
-- Scikit-learn
-- TensorFlow / Keras
-- TF-IDF + n-grams
-- Neural Networks
-- Class imbalance techniques
-- Survey Analytics integration
+Integrar texto libre + escalas cuantitativas.
 
----
+Detectar señales tempranas de deterioro.
 
-## Key Technical Concepts Demonstrated
+Construir un score comparable entre períodos o entidades.
 
-- Text preprocessing pipeline
-- Stopword removal and normalization
-- TF-IDF feature engineering
-- Supervised learning (Random Forest, Neural Networks)
-- Class weighting for imbalanced datasets
-- Threshold tuning
-- Multiclass modeling (Softmax)
-- Confusion matrix visualization
-- Overfitting analysis
-- Model validation best practices
+Diseñar un pipeline replicable para distintos contextos (Educación, Energía, RRHH, Customer Experience).
 
----
+🧠 Modelado
 
-## Ethical Considerations
+TF-IDF Vectorization
 
-All datasets used in this repository are synthetic or anonymized.
-The system is designed with privacy compliance in mind.
+Logistic Regression
 
----
+class_weight balancing
 
-## Future Improvements
+Threshold tuning
 
-- K-Fold Cross Validation
-- ROC-AUC curves
-- Precision-Recall curves
-- Transformer-based models (BERT)
-- Dashboard integration (Power BI / Looker)
+SMOTE (opcional)
+
+Evaluación con:
+
+Accuracy
+
+Precision / Recall
+
+F1 Score
+
+Confusion Matrix
+
+📈 Survey Analytics
+
+Escala Likert transformada a índice 0–100:
+
+1 → 0
+2 → 25
+3 → 50
+4 → 75
+5 → 100
+
+Score global = combinación ponderada de:
+
+Índice Likert
+
+Predicción de sentimiento textual
+
+📊 Dashboard Ready Output
+
+El sistema genera datasets agregados por:
+
+Curso
+
+Docente
+
+Período
+
+Nivel de riesgo
+
+Listos para exportar a Power BI / Looker.
+
+🔎 Interpretabilidad
+
+Se extraen los tokens con mayor peso por clase para:
+
+Transparencia
+
+Auditoría del modelo
+
+Identificación de patrones reales
+
+⚖ Ética y Buenas Prácticas
+
+Anonimización de datos
+
+No uso para decisiones punitivas
+
+Uso como herramienta de mejora continua
+
+
+----------------------------------------------------------------------------------------------------------------------
+
+🇬🇧 English Version
+Project Overview
+
+Replicable NLP + Survey Analytics framework designed to analyze textual feedback combined with Likert scales, generating:
+
+Binary classification (Risk vs OK)
+
+Multiclass sentiment classification
+
+0–100 performance index
+
+Dashboard-ready aggregations
+
+Model interpretability (top weighted tokens)
+
+Business Value
+
+Early risk detection
+
+Performance scoring
+
+Scalable analytics framework
+
+Hybrid structured + unstructured data integration
+
+Tech Stack
+
+Python
+
+Scikit-learn
+
+Pandas
+
+TF-IDF
+
+Logistic Regression
+
+Imbalanced handling strategies
+
+📂 Repository Structure
+nlp-feedback-classification/
+│
+├── data/
+│   └── sample_feedback.csv
+│
+├── notebooks/
+│   └── nlp_feedback_modeling_framework.ipynb
+│
+├── README.md
+├── LICENSE
+└── requirements.txt
+
+🚀 Potential Applications
+
+Education performance analytics
+
+Employee feedback analysis
+
+Energy workforce evaluation
+
+Customer satisfaction modeling
+
+Operational sentiment monitoring
 
 ---
 
