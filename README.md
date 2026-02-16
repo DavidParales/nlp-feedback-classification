@@ -1,3 +1,10 @@
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-orange)
+![NLP](https://img.shields.io/badge/NLP-Text%20Mining-green)
+![Survey%20Analytics](https://img.shields.io/badge/Survey-Analytics-lightgrey)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow)
+
+
 📊 NLP Feedback Classification Framework
 Survey Analytics + Text Mining + Performance Scoring
 
