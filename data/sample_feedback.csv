@@ -1,0 +1,6 @@
+source,year,level,role_evaluator,likert_avg,text_feedback
+student,2024,5,student,0.82,El docente explica con claridad y motiva al curso.
+student,2024,5,student,0.4,Las clases son confusas y poco organizadas.
+leadership,2024,5,director,0.75,Cumple con la planificación y demuestra compromiso.
+self,2024,5,self,0.88,Busco mejorar constantemente mis estrategias pedagógicas.
+student,2025,4,student,0.55,"Algunas clases resultan interesantes, otras no tanto."
