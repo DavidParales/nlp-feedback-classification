@@ -6,115 +6,118 @@
 
 
 📊 NLP Feedback Classification Framework
-Survey Analytics + Text Mining + Performance Scoring
+NLP + Survey Analytics + Performance Scoring
 
 
 
-🇪🇸 Descripción (Español)
+🇪🇸 Descripción
 
-Sistema replicable de NLP + Survey Analytics diseñado para analizar feedback textual combinado con escalas Likert, generando:
+Framework modular de Procesamiento de Lenguaje Natural + Survey Analytics diseñado para integrar:
 
-Clasificación binaria (Riesgo vs OK)
+Feedback textual (datos no estructurados)
 
-Clasificación multiclase (Negativo / Neutral / Positivo)
+Escalas Likert (datos estructurados)
 
-Índice de desempeño normalizado (0–100)
+Clasificación binaria (Risk vs OK)
 
-Agregaciones listas para Power BI / Looker
+Clasificación multiclase (Negativa / Neutral / Positiva)
 
-Interpretabilidad del modelo (tokens con mayor peso)
+Índice de desempeño 0–100
 
-Este framework permite integrar datos estructurados y no estructurados en un sistema analítico escalable.
+Outputs listos para Power BI / Looker
 
-🎯 Objetivos del Proyecto
+Este proyecto demuestra integración real entre análisis cuantitativo y cualitativo en un sistema escalable.
 
-Integrar texto libre + escalas cuantitativas.
+🎯 Qué resuelve
 
-Detectar señales tempranas de deterioro.
+✔ Detección temprana de riesgo
+✔ Medición de desempeño basada en texto
+✔ Integración texto + encuesta
+✔ Manejo de datasets desbalanceados
+✔ Interpretabilidad del modelo
 
-Construir un score comparable entre períodos o entidades.
+🧠 Arquitectura
+nlp-feedback-classification/
+│
+├── data/
+│   └── sample_feedback.csv
+│
+├── notebooks/
+│   └── nlp_feedback_modeling_framework_COLAB_SRC.ipynb
+│
+├── src/
+│   ├── preprocessing.py
+│   ├── targets.py
+│   ├── modeling.py
+│   └── analytics.py
+│
+├── requirements.txt
+├── CHANGELOG.md
+└── README.md
 
-Diseñar un pipeline replicable para distintos contextos (Educación, Energía, RRHH, Customer Experience).
+⚙ Stack Tecnológico
 
-🧠 Modelado
+Python
 
-TF-IDF Vectorization
+Scikit-learn
+
+TF-IDF
 
 Logistic Regression
 
-class_weight balancing
-
-Threshold tuning
+Linear SVM
 
 SMOTE (opcional)
 
-Evaluación con:
+Threshold tuning
 
-Accuracy
+Survey Index Modeling
 
-Precision / Recall
+📈 Aplicaciones
 
-F1 Score
+Educación (evaluación docente)
 
-Confusion Matrix
+RRHH (employee feedback analytics)
 
-📈 Survey Analytics
+Customer experience
 
-Escala Likert transformada a índice 0–100:
+Operational sentiment monitoring
 
-1 → 0
-2 → 25
-3 → 50
-4 → 75
-5 → 100
+Energy workforce evaluation
 
-Score global = combinación ponderada de:
+🔗 Conexión con Energy Analytics
 
-Índice Likert
+Este framework complementa mi trabajo en PFI (Parales Fuel Intelligence), agregando análisis de señales cualitativas mediante NLP.
 
-Predicción de sentimiento textual
+Mientras PFI analiza:
 
-📊 Dashboard Ready Output
+Mercado energético
 
-El sistema genera datasets agregados por:
+Distribución
 
-Curso
+Consumo
 
-Docente
+Inteligencia de negocio
 
-Período
+Este repositorio agrega:
 
-Nivel de riesgo
+Análisis de feedback operativo
 
-Listos para exportar a Power BI / Looker.
+Monitoreo de clima organizacional
 
-🔎 Interpretabilidad
+Detección temprana de riesgo humano
 
-Se extraen los tokens con mayor peso por clase para:
+Evaluación cualitativa en entornos energéticos
 
-Transparencia
+La combinación de ambos permite construir sistemas híbridos de decisión en el sector energético.
 
-Auditoría del modelo
+------------------------------------------------------------------------------------------------------------------
 
-Identificación de patrones reales
+🇬🇧 English Summary
 
-⚖ Ética y Buenas Prácticas
+Modular NLP + Survey Analytics framework integrating structured (Likert) and unstructured (text) data to generate:
 
-Anonimización de datos
-
-No uso para decisiones punitivas
-
-Uso como herramienta de mejora continua
-
-
-----------------------------------------------------------------------------------------------------------------------
-
-🇬🇧 English Version
-Project Overview
-
-Replicable NLP + Survey Analytics framework designed to analyze textual feedback combined with Likert scales, generating:
-
-Binary classification (Risk vs OK)
+Binary risk detection
 
 Multiclass sentiment classification
 
@@ -122,56 +125,9 @@ Multiclass sentiment classification
 
 Dashboard-ready aggregations
 
-Model interpretability (top weighted tokens)
+Model interpretability
 
-Business Value
-
-Early risk detection
-
-Performance scoring
-
-Scalable analytics framework
-
-Hybrid structured + unstructured data integration
-
-Tech Stack
-
-Python
-
-Scikit-learn
-
-Pandas
-
-TF-IDF
-
-Logistic Regression
-
-Imbalanced handling strategies
-
-📂 Repository Structure
-nlp-feedback-classification/
-│
-├── data/
-│   └── sample_feedback.csv
-│
-├── notebooks/
-│   └── nlp_feedback_modeling_framework.ipynb
-│
-├── README.md
-├── LICENSE
-└── requirements.txt
-
-🚀 Potential Applications
-
-Education performance analytics
-
-Employee feedback analysis
-
-Energy workforce evaluation
-
-Customer satisfaction modeling
-
-Operational sentiment monitoring
+Applicable to Education, HR Analytics, Energy Operations and Customer Experience.
 
 ---
 
