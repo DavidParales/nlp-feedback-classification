@@ -3,7 +3,5 @@ numpy
 scikit-learn
 nltk
 matplotlib
-seaborn
-tensorflow
-textblob
+joblib
 imbalanced-learn
