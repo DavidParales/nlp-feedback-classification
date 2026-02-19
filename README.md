@@ -141,3 +141,6 @@ Applicable to Education, HR Analytics, Energy Operations and Customer Experience
 
 Author: David Parales  
 Energy & Data Analytics
+
+© 2026 David Parales. All rights reserved.
+
